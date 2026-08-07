@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* =========================================================
+   1. Variables y colores
+   ========================================================= */
+
+:root {
+    /* Color principal: botones, enlaces y acciones importantes */
+    --color-primary: #474673;
+
+    /* Color oscuro: títulos, texto principal y elementos fuertes */
+    --color-dark: #0f1626;
+
+    /* Gris: texto secundario, placeholders y elementos desactivados */
+    --color-gray: #949ba6;
+
+    /* Color claro: fondo general de la aplicación */
+    --color-light: #f2f2f2;
+
+    /* Color de acento: destacados y elementos secundarios */
+    --color-accent: #89b3d9;
+}
+
+/* =========================================================
+   2. Reset básico
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================================
+   3. HTML y Body
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    /* Fuente principal de toda la aplicación */
+    font-family: "Poppins", sans-serif;
+
+    /* Fondo y color de texto por defecto */
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    overflow-x: hidden;
+}
+
+/* =========================================================
+   4. Tipografía
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-dark);
+    font-weight: 600; /* Grosor de la fuente */
+}
+
+p {
+    color: var(--color-dark);
+}
+
+/* =========================================================
+   5. Enlaces
+   ========================================================= */
+
+a {
+    color: var(--color-primary);
+    text-decoration: none; /* Les quita la línea debajo del texto que viene por defecto */
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+/* =========================================================
+   6. Formularios y botones
+   ========================================================= */
+
+button,
+input,
+textarea,
+select {
+  /* Hace que los formularios utilicen Poppins */
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* =========================================================
+   7. Imágenes
+   ========================================================= */
+
+img {
+    /* Evita que una imagen se salga de su contenedor */
+    max-width: 100%;
+    display: block;
+}
+
+/* =========================================================
+   8. Selección de texto
+   ========================================================= */
+
+::selection {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+}

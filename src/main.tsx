@@ -1,10 +1,13 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
+
+// Importamos los estilos globales, los que se van a usar en toda la app
+import './assets/css/global.css'
+import { AppRouter } from './router/Router'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    {/* Router creado por nosotros donde definimos las rutas de nuestra app */}
+    <AppRouter /> 
   </StrictMode>,
 )
