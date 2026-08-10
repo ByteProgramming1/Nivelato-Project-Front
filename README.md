@@ -107,13 +107,105 @@ Comienza por el **índice completo del curso** ubicado en `docs/curso/README.md`
 
 ## Cómo se evalúa tu avance
 
-Cada nivel incluye una serie de retos y ejercicios diseñados para que explores el proyecto y pongas en práctica los conceptos aprendidos.
+El curso está diseñado para avanzar **paso a paso sobre la misma aplicación**.
 
-La idea **no es construir toda la aplicación desde cero**, sino aprender a leer código existente, comprender cómo está organizado y ser capaz de modificarlo o extenderlo de manera segura.
+Cada nivel contiene:
 
-Este enfoque busca acercarte a una situación común dentro de un equipo de desarrollo: incorporarte a un proyecto que ya existe y tener que entender su código antes de comenzar a trabajar en él.
+```text
+01-estructura-del-proyecto/
+├── README.md   # Guía del nivel
+└── RETO.md     # Reto práctico
+```
 
-Los retos aumentan progresivamente de dificultad y están pensados para que cada nivel utilice los conocimientos adquiridos anteriormente.
+La dinámica recomendada es:
+
+```text
+Leer la guía
+    ↓
+Explorar el proyecto
+    ↓
+Resolver el reto
+    ↓
+Guardar tu trabajo
+    ↓
+Comparar con la solución
+    ↓
+Continuar con el siguiente nivel
+```
+
+### 🔎 Consultar las soluciones
+
+Las soluciones oficiales se publican como **tags de Git** al finalizar cada nivel.
+
+Por ejemplo:
+
+```text
+nivel-1
+nivel-2
+nivel-3
+...
+```
+
+Antes de consultar una solución, **asegúrate de guardar tu trabajo actual**.
+
+La forma recomendada es crear un commit:
+
+```bash
+git add .
+git commit -m "feat: solución nivel 1"
+```
+
+> ⚠️ **No cambies al tag de la solución teniendo cambios sin guardar.** Podrías encontrarte con conflictos o Git podría impedir el cambio.
+
+Una vez guardado tu trabajo, actualiza los tags:
+
+```bash
+git fetch --tags
+```
+
+Puedes consultar los tags disponibles con:
+
+```bash
+git tag
+```
+
+Para revisar, por ejemplo, la solución del Nivel 1:
+
+```bash
+git switch --detach nivel-1
+```
+
+Ahora estarás viendo **la misma carpeta del proyecto**, pero en el estado exacto en el que se encontraba cuando se publicó la solución del Nivel 1.
+
+> 💡 No se crea una segunda copia del proyecto. Git simplemente cambia la versión de los archivos que estás viendo.
+
+Cuando termines de comparar tu solución con la oficial, vuelve a tu rama:
+
+```bash
+git switch main
+```
+
+Y podrás continuar trabajando normalmente.
+
+### 📌 Importante
+
+Los tags son **puntos de referencia** del proyecto:
+
+```text
+main
+ │
+ ├── Nivel 0
+ │
+ ├── Nivel 1 ────── nivel-1
+ │
+ ├── Nivel 2 ────── nivel-2
+ │
+ └── Nivel 3 ────── nivel-3
+```
+
+Tu trabajo continúa siempre sobre `main`. Los tags solamente permiten consultar cómo debería verse el proyecto al finalizar cada nivel.
+
+> ⭐ **Intenta resolver cada reto antes de consultar su solución.** La solución está ahí para comparar, aprender y detectar qué podrías mejorar, no para saltarte el reto.
 
 ## Estructura del repositorio
 
