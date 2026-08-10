@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../pages/Home/HomePage";
+import RecipesPage from "../pages/Recipes/RecipesPage";
 
 export const AppRouter = () => {
   return (
@@ -20,6 +21,9 @@ export const AppRouter = () => {
 
         {/* Accede a la ruta "/hello" del navegador para ver esta página */}
         <Route path="/hello" element={<h1>Hello World!</h1>} />
+
+        {/* Creamos la ruta de recetas */}
+        <Route path="/recipes" element={<RecipesPage />} />
 
         {/* Aquí puedes crear las rutas que necesites */}
         

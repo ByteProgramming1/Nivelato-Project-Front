@@ -15,6 +15,18 @@ const HomePage = () => {
             >
                 Hello World
             </Link>
+
+            <br/>
+            <Link
+                to="/recipes"
+                style={{
+                    fontSize: 20,
+                    textDecoration: "underline",
+                    color: "blue"
+                }}
+            >
+                Ver recetas
+            </Link>
         </main>
     )
 }
