@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+/* ==========================================================================
+    VARIABLES GLOBALES (CSS Custom Properties)
+    ==========================================================================
+    Se utilizan variables para centralizar los valores reutilizables (colores,
+    tipografías, espaciados, etc.). 
+    
+    Esto facilita el mantenimiento del proyecto: permite cambiar la paleta 
+    de colores o el tema (ej. modo oscuro) desde un solo lugar sin tener que 
+    modificar manualmente cada regla del código.
+*/
+
 /* =========================================================
    1. Variables y colores
    ========================================================= */
@@ -78,7 +89,7 @@ p {
    ========================================================= */
 
 a {
-    color: var(--color-primary);
+    color: var(--color-gray);
     text-decoration: none; /* Les quita la línea debajo del texto que viene por defecto */
 }
 

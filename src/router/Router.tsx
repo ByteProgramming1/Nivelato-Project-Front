@@ -11,8 +11,19 @@ export const AppRouter = () => {
         <Route path="/recipes" element={<RecipesPage />}
       */}
       <Routes>
-        {/* Ruta para homepage */}
+        {/*
+          Ruta para homepage donde:
+          - path: ruta en el navegador
+          - element: componente page que se renderizará en esa ruta
+        */}
         <Route path="/" element={<HomePage />} />
+
+        {/* Accede a la ruta "/hello" del navegador para ver esta página */}
+        <Route path="/hello" element={<h1>Hello World!</h1>} />
+
+        {/* Aquí puedes crear las rutas que necesites */}
+        
+
       </Routes>
     </BrowserRouter>
   );

@@ -6,6 +6,13 @@
 
 > Esperamos que este proyecto les ayude a dar sus primeros pasos en el desarrollo frontend. El semillero siempre estará disponible para todo lo que deseen aprender, aportar y mejorar.
 
+[![Node.js](https://img.shields.io/badge/Node.js-20+-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5+-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19+-61DAFB?logo=react&logoColor=black)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-7+-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![React Query](https://img.shields.io/badge/React_Query-5+-FF4154?logo=reactquery&logoColor=white)](https://tanstack.com/query)
+[![CSS](https://img.shields.io/badge/CSS-3+-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
 ---
 
 Este repositorio **no es solo una aplicación de recetas**: es un mini-curso práctico para aprender, construyendo y explorando, cómo funciona un frontend moderno utilizando **React, Vite y TypeScript**.

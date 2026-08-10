@@ -273,7 +273,7 @@ Y la API devuelve información que nuestro frontend puede utilizar para construi
 
 Este proyecto está diseñado para trabajar junto con:
 
-**Nivelato Project API**
+**[Nivelato Project API](https://github.com/ByteProgramming1/Nivelato-Project-API)**
 
 El backend proporciona los endpoints que utilizaremos para trabajar con las recetas, usuarios y demás información de la aplicación.
 
