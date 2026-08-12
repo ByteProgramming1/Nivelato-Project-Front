@@ -21,11 +21,13 @@ Ya construiste una página para las recetas en:
 
 Ahora bien, hay que mostrar todas las recetas: cada receta debe tener como mínimo:
 
-* Nombre.
+* Título.
 * Descripción.
 * Tiempo de preparación.
-* Categoría o tipo.
+* Cantidad de pasos
+* Cantidad de ingredientes
 * Una imagen.
+* Autor
 
 La interfaz puede ser similar a:
 
@@ -52,7 +54,7 @@ src/assets/css/global.css
 
 Para verificar sintaxis, soporte y mejores prácticas de propiedades CSS, consulta la documentación oficial:
 
-[👉 MDN Web Docs - Referencia CSS]("https://developer.mozilla.org/es/docs/Web/CSS")
+[👉 MDN Web Docs - Referencia CSS](https://developer.mozilla.org/es/docs/Web/CSS)
 
 >⚠️ Importante: Recuerda importar siempre la hoja de estilos en el componente en el que deseas utilizarlos.
 
@@ -117,19 +119,23 @@ Por ejemplo:
 ```ts
 const recipes = [
   {
-    id: 1,
-    name: "Pizza de pepperoni",
+    id: "1",
+    title: "Pizza de pepperoni",
     description: "Pizza casera con queso y pepperoni.",
     time: 40,
-    type: "Italiana",
+    author: "Laura Martínez",
+    ingredients: 4,
+    steps: 5,
     image: "...",
   },
   {
-    id: 2,
-    name: "Pasta carbonara",
+    id: "2",
+    title: "Pasta carbonara",
     description: "Pasta tradicional con una salsa cremosa.",
     time: 25,
-    type: "Italiana",
+    author: "Diego Hernández",
+    ingredients: 3,
+    steps: 8,
     image: "...",
   },
 ];
@@ -142,7 +148,7 @@ const recipes = [
 1. Debes crear una nueva ruta `/recipes`.
 2. Debes crear una página `RecipesPage`.
 3. Debes crear al menos dos componentes reutilizables relacionados con las recetas.
-4. `RecipeCard` debe recibir información mediante [props]("https://www.reactjs.wiki/que-son-las-props-en-react").
+4. `RecipeCard` debe recibir información mediante [props](https://www.reactjs.wiki/que-son-las-props-en-react).
 5. Las recetas deben almacenarse inicialmente como datos locales.
 6. No debes colocar toda la interfaz dentro de `RecipesPage.tsx`.
 7. Debes utilizar `<Link>` de React Router DOM para navegar hacia la nueva sección.
