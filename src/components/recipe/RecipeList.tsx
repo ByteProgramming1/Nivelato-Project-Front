@@ -122,16 +122,33 @@ const ITEMS = [
 const RecipeList = () => {
     return (
         <section className="recipe-list">
-            {ITEMS.map((recipe) => (
-                /** El spread operator (...recipe) reparte cada propiedad
-                 * del objeto "recipe" (title, image, author, etc.) como
-                 * una prop individual del componente RecipeCard.
-                 * La prop "key" va aparte porque React la usa internamente
-                 * para identificar cada item de la lista, no se la pasamos
-                 * a RecipeCard como parte de sus props "normales"
-                 */
+            {/* {ITEMS.map((recipe) => (
+                // El spread operator (...recipe) reparte cada propiedad
+                // del objeto "recipe" (title, image, author, etc.) como
+                // una prop individual del componente RecipeCard.
+                // La prop "key" va aparte porque React la usa internamente
+                // para identificar cada item de la lista, no se la pasamos
+                // a RecipeCard como parte de sus props "normales"
+                
                 <RecipeCard key={recipe.id} {...recipe} />
-            ))}
+            ))} */}
+
+
+            {/* Incluyendo reto adicional (conditional rendering) */}
+            {ITEMS.length == 0 ? (
+                "No hay Recetas Disponibles"
+            ) : (
+                // El spread operator (...recipe) reparte cada propiedad
+                // del objeto "recipe" (title, image, author, etc.) como
+                // una prop individual del componente RecipeCard.
+                // La prop "key" va aparte porque React la usa internamente
+                // para identificar cada item de la lista, no se la pasamos
+                // a RecipeCard como parte de sus props "normales"
+                
+                ITEMS.map((recipe) => (
+                    <RecipeCard key={recipe.id} {...recipe} />
+                ))
+            )}
         </section>
     )
 }
