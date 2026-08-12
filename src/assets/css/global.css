@@ -64,6 +64,13 @@ body {
     color: var(--color-dark);
 
     overflow-x: hidden;
+
+    /* Añadimos estilos para centrar todo el contenido */
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
 }
 
 /* =========================================================
@@ -120,7 +127,8 @@ button {
 img {
     /* Evita que una imagen se salga de su contenedor */
     max-width: 100%;
-    display: block;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 /* =========================================================

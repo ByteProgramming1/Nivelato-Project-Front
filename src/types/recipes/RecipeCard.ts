@@ -1,8 +1,9 @@
 export type RecipeCard = {
     id: string;
-    name: string;
+    title: string;
     description: string;
     time: number;
-    type: string;
     image: string;
+    author: string;
+    ingredients: number;
 };

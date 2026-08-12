@@ -1,3 +1,5 @@
+import RecipeList from "../../components/recipe/RecipeList"
+
 const RecipesPage = () => {
     return (
         <div>
@@ -14,6 +16,9 @@ const RecipesPage = () => {
                 <br/>
                 10 recetas disponibles
             </h4>
+
+            {/* Componente de lista de recetas */}
+            <RecipeList />
         </div>
     )
 }
